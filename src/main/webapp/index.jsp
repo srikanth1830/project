@@ -31,6 +31,9 @@
 
     <label for="father"><b>father Name</b></label><br>
     <input type="text" placeholder="father Name" name="father" id="father" required><br><br>
+
+    <label for="pan card"><b>pan card</b></label><br>
+    <input type="text" placeholder="pan card" name="pancard" id="pancard" required><br><br>
     <hr>
 
     <p>By giving above details, you agree to our <a href="#">Terms & Privacy</a>.</p>

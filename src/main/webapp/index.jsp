@@ -34,6 +34,9 @@
 
     <label for="pan card"><b>pan card</b></label><br>
     <input type="text" placeholder="pan card" name="pancard" id="pancard" required><br><br>
+
+    <label for="voter card"><b>voter card</b></label><br>
+    <input type="text" placeholder="voter card" name="votercard" id="votercard" required><br><br>
     <hr>
 
     <p>By giving above details, you agree to our <a href="#">Terms & Privacy</a>.</p>

@@ -37,6 +37,9 @@
 
     <label for="voter card"><b>voter card</b></label><br>
     <input type="text" placeholder="voter card" name="votercard" id="votercard" required><br><br>
+
+    <label for="Ramsey Bolton"><b>Ramsey Bolton</b></label><br>
+    <input type="text" placeholder="Ramsey Bolton" name="RamseyBolton" id="RamseyBolton" required><br><br>
     <hr>
 
     <p>By giving above details, you agree to our <a href="#">Terms & Privacy</a>.</p>

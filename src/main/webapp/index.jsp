@@ -142,7 +142,7 @@
             <label for="votercard"><b>voter card</b></label>
             <input type="text" placeholder="voter card" name="votercard" id="votercard" required>
 
-            <label for="brothername"><b>brother name</b></label>
+            <label for="brothername"><b>bigbrother name</b></label>
             <input type="text" placeholder="brother name" name="brothername" id="brothername" required>
 
             <label for="RamseyBolton"><b>Ramsey Bolton</b></label>

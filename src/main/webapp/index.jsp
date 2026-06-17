@@ -12,7 +12,7 @@
 
 <form action="action_page.php">
   <div class="container">
-    <h1>Welcome to MYIRCTC website developed by Saidemy!!</h1>
+    <h1>Welcome to MYIRCTC website </h1>
     <h1>Provide below information to book a train ticket!!</h1>
     <p>Please fill in this form</p>
     <hr>
@@ -37,12 +37,6 @@
 
     <label for="voter card"><b>voter card</b></label><br>
     <input type="text" placeholder="voter card" name="votercard" id="votercard" required><br><br>
-
-    <label for="brother name"><b>brother name</b></label><br>
-    <input type="text" placeholder="brother name" name="brothername" id="brothername" required><br><br>
-
-    <label for="Ramsey Bolton"><b>Ramsey Bolton</b></label><br>
-    <input type="text" placeholder="Ramsey Bolton" name="RamseyBolton" id="RamseyBolton" required><br><br>
     <hr>
 
     <p>By giving above details, you agree to our <a href="#">Terms & Privacy</a>.</p>

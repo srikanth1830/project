@@ -3,9 +3,10 @@
     docker_user: "srikanth018"
     docker_password: "{{ DOCKER_HUB_PASSWORD }}"
 
-  tasks: 
+  tasks:
     - name: creating image
-      command: docker build -t regimg .
+      # 🚨 FIXED: Changed the context dot at the end to the real absolute directory path string
+      command: docker build -t regimg /opt/docker
 
     - name: tagging image for docker hub
       command: docker tag regimg srikanth018/regimg:latest
@@ -15,3 +16,4 @@
 
     - name: push to hub
       command: docker push srikanth018/regimg:latest
+

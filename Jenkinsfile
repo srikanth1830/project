@@ -20,6 +20,9 @@ pipeline {
         // 🚨 UPDATE THIS with your actual separate Ansible Server Private IP
         ANSIBLE_SERVER_IP = '172.31.31.155' 
     }
+ tools {
+        maven 'maven3'
+    }
 
     stages {
         stage('Stage 1: Fetch Code from Git Server') {

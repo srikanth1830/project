@@ -13,7 +13,7 @@
 <form action="action_page.php">
   <div class="container">
     <h1>Welcome to MYIRCTC website </h1>
-    <h1>Provide below information to book a flight ticket!!</h1>
+    <h1>Provide below information to book a train ticket!!</h1>
     <p>Please fill in this form</p>
     <hr>
 

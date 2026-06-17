@@ -66,7 +66,7 @@ pipeline {
                 sh "ssh ram@${ANSIBLE_SERVER_IP} 'curl -u admin:Srikanthreddy@123 -X GET ${JFROG_URL}/${JFROG_REPO}/${WAR_VERSION} -o /opt/docker/app.war'"
                 
                 // 3. Copy your Dockerfile and Playbook files from Jenkins over to the separate Ansible machine via native SSH trust
-                sh "scp dockerfile *.yml ram@${ANSIBLE_SERVER_IP}:/opt/docker/"
+                sh "scp Dockerfile *.yml ram@${ANSIBLE_SERVER_IP}:/opt/docker/"
             }
         }
 

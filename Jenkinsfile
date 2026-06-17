@@ -51,7 +51,7 @@ pipeline {
                 
                 // Simple admin authentication works perfectly with your 7.38.10 version
                 echo "Uploading .war package over the network to separate JFrog server..."
-                sh "curl -u admin:password -X PUT ${JFROG_URL}/${JFROG_REPO}/${WAR_VERSION} -T target/*.war"
+                sh "curl -u admin:Srikanthreddy@123 -X PUT ${JFROG_URL}/${JFROG_REPO}/${WAR_VERSION} -T target/*.war"
             }
         }
 
@@ -63,7 +63,7 @@ pipeline {
                 sh "ssh -o StrictHostKeyChecking=no ram@${ANSIBLE_SERVER_IP} 'sudo mkdir -p /opt/docker && sudo chown -R ram:ram /opt/docker && sudo chmod 755 /opt/docker'"
                 
                 // 2. Tell the Ansible server to download the war directly from the separate JFrog server
-                sh "ssh ram@${ANSIBLE_SERVER_IP} 'curl -u admin:password -X GET ${JFROG_URL}/${JFROG_REPO}/${WAR_VERSION} -o /opt/docker/app.war'"
+                sh "ssh ram@${ANSIBLE_SERVER_IP} 'curl -u admin:Srikanthreddy@123 -X GET ${JFROG_URL}/${JFROG_REPO}/${WAR_VERSION} -o /opt/docker/app.war'"
                 
                 // 3. Copy your Dockerfile and Playbook files from Jenkins over to the separate Ansible machine via native SSH trust
                 sh "scp Dockerfile *.yml ram@${ANSIBLE_SERVER_IP}:/opt/docker/"

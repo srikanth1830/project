@@ -9,7 +9,7 @@ pipeline {
         SONAR_SERVER_NAME = 'my-sonar-sytem'
         
         // 3. Your running separate JFrog server web URL (Port 8082 for your version)
-        JFROG_URL         = 'http://44.202.62.235:8081/artifactory'
+        JFROG_URL         = 'http://35.171.28.103:8081/artifactory'
         
         // 4. The exact Repository Key you created inside the JFrog Web UI
         JFROG_REPO        = 'libs-release-local'
@@ -18,7 +18,7 @@ pipeline {
         WAR_VERSION       = "app-v${BUILD_NUMBER}.war" 
         
         // 🚨 UPDATE THIS with your actual separate Ansible Server Private IP
-        ANSIBLE_SERVER_IP = '172.31.31.155' 
+        ANSIBLE_SERVER_IP = '172.31.30.240' 
     }
  tools {
         maven 'maven3'
